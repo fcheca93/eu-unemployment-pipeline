@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: public
+    database: eu_unemployment
+    schema: public
+    tables:
+      - name: unemployment_rate_germany

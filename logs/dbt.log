@@ -1,0 +1,44 @@
+[0m18:47:01.875002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1474F4F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1443D6E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1474F4FD0>]}
+
+
+============================== 18:47:01.901987 | e7b0006c-62c5-4acc-9689-c47aa470d259 ==============================
+[0m18:47:01.901987 [info ] [MainThread]: Running with dbt=1.8.0
+[0m18:47:01.903988 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\fchec\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init eu_unemployment_dbt', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:47:01.930969 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'WindowsPath'.. Dictionary: {'dir': WindowsPath('C:/Users/fchec/.dbt')}
+[0m18:47:01.931970 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m18:47:01.936968 [debug] [MainThread]: Starter project path: C:\projects\eu-unemployment-pipeline\venv\Lib\site-packages\dbt\include\starter_project
+[0m18:47:02.021932 [info ] [MainThread]: 
+Your new dbt project "eu_unemployment_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:47:02.023918 [info ] [MainThread]: Setting up your profile.
+[0m18:50:50.994397 [info ] [MainThread]: Profile eu_unemployment_dbt written to C:\Users\fchec\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:50:50.996396 [debug] [MainThread]: Command `dbt init` succeeded at 18:50:50.996396 after 229.22 seconds
+[0m18:50:50.997385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1474B4550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E140D33950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E14619F4D0>]}
+[0m18:50:50.998396 [debug] [MainThread]: Flushing usage events
+[0m18:59:13.614286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A7456290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A7387FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A7505F10>]}
+
+
+============================== 18:59:13.620283 | c15e550d-c85e-403c-a449-3db9b5c3767d ==============================
+[0m18:59:13.620283 [info ] [MainThread]: Running with dbt=1.8.0
+[0m18:59:13.621284 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\fchec\\.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select unemployment_annual_dbt', 'send_anonymous_usage_stats': 'True'}
+[0m18:59:13.622283 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\projects\eu-unemployment-pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:59:13.624280 [debug] [MainThread]: Command `dbt run` failed at 18:59:13.624280 after 0.15 seconds
+[0m18:59:13.625280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A75B4A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A74F9F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A759FC10>]}
+[0m18:59:13.626280 [debug] [MainThread]: Flushing usage events
